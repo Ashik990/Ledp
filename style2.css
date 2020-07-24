@@ -1,0 +1,50 @@
+body {
+	background-image: url(./back.jpg);
+	background-size: cover;
+}
+
+#form {
+	border: 1px dotted black;
+	display: inline-block;
+	margin: 60px;
+	padding: 30px;
+	background-color: cadetblue;
+	
+}
+
+#form h1 {
+	color: blue;
+	text-align: center;
+}
+
+ .form::after{
+	content : '*' ;
+ }
+
+ [data-tooltip] {
+	position:relative;
+ }
+
+  [data-tooltip]:hover::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	top: 100px;
+	margin-top: 15px;
+	padding: 10px;
+	background-color: lightgrey;
+	
+  }
+
+  .form {
+	  margin: 10px;
+	  font-size: 15px;
+  }
+
+  #form button {
+	  padding: 10px;
+	  margin-right: 20px;
+	  margin: 10px;
+	  color: white;
+	  background-color: blue;
+	  text-align: center;
+  }
